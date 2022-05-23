@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,500&display=swap');
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -10,14 +12,33 @@ body{
 
 h1{
     font-size: 5em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
     color: white;
     text-align: right;
 }
 
 h2{
     font-size: 3em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
     color: whitesmoke;
     text-align: right;
+}
+
+h3{
+    font-size: 2em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    color: whitesmoke;
+}
+
+p{
+    font-size: 1em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    color: rgb(230, 230, 230);
+
 }
 
 header{
@@ -37,16 +58,13 @@ header{
 }
 
 #process-container{
-    background: rgb(255,207,110);
-    background: linear-gradient(0deg, rgba(255,207,110,1) 0%, rgba(242,165,83,1) 100%);
+    background-color: #E1A484;
 }
 
 #team-container{
-    background: rgb(73,210,252);
-    background: linear-gradient(0deg, rgba(73,210,252,1) 0%, rgba(255,207,110,1) 100%);
+    background-color: #B199D7;
 }
 
 #concepts-container{
-    background: rgb(58,149,255);
-    background: linear-gradient(0deg, rgba(58,149,255,1) 0%, rgba(73,210,252,1) 100%);
+    background-color: #8981AC;
 }
