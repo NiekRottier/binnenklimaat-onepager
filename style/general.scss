@@ -46,6 +46,19 @@ h3{
     }
 }
 
+h4{
+    font-size: 1.2em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    color: whitesmoke;
+
+    margin-top: 10px;
+
+    @media (max-width: $smallscr){
+        font-size: 1.1em;
+    }
+}
+
 p, summary, img{
     font-size: 1em;
     font-family: 'Poppins', sans-serif;
@@ -201,7 +214,7 @@ header{
             }
 
             img{
-                width: 50%;
+                width: 50vw;
                 margin: 1vw 0 1vw 1vw;
                 float: right;
             }
