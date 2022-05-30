@@ -41,6 +41,8 @@ h3{
     font-weight: 200;
     color: whitesmoke;
 
+    margin-top: 2vw;
+
     @media (max-width: $smallscr){
         font-size: 1.5em;
     }
@@ -59,7 +61,7 @@ h4{
     }
 }
 
-p, summary, img{
+p, summary, img, li{
     font-size: 1em;
     font-family: 'Poppins', sans-serif;
     font-weight: 200;
@@ -72,6 +74,15 @@ small{
     font-family: 'Poppins', sans-serif;
     font-weight: 200;
     color: rgb(230, 230, 230);
+}
+
+b{
+    font-weight: 400;
+}
+
+ul{
+    padding-left: 3vw;
+    margin: 1vw 0;
 }
 
 header{
@@ -91,7 +102,6 @@ header{
     margin-bottom: 1vw;
     padding: 8vw 2vw;
 
-    
     @media (max-width: $smallscr){
         padding-top: 2vw;
     }
@@ -101,7 +111,6 @@ header{
         top: 1vw;
         right: 2vw;
 
-        
         @media (max-width: $smallscr){
             position: relative;
             text-align: center;
@@ -111,6 +120,28 @@ header{
 
 #process-container{
     background-color: #E1A484;
+
+    img{
+        width: 40%;
+        max-width: 400px;
+        margin-top: 2vw;
+
+        float: right;
+
+        @media (max-width: $smallscr){
+            float: none;
+            width: 70%;
+            max-width: none;
+            margin: 3vw 0 2vw 15%;
+        }
+    }
+
+    // Clearfix to make sure the images don't go out of the box
+    &::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
 }
 
 #team-container{
@@ -212,7 +243,7 @@ header{
                 margin-top: 5px;
                 text-align: justify;
             }
-            
+
             img{
                 width: 40%;
                 max-width: 300px;
