@@ -212,11 +212,20 @@ header{
                 margin-top: 5px;
                 text-align: justify;
             }
-
+            
             img{
-                width: 50vw;
-                margin: 1vw 0 1vw 1vw;
+                width: 40%;
+                max-width: 300px;
+                margin: 1vw 0 1vw 1vw ;
                 float: right;
+
+                @media (max-width: $smallscr){
+                    float: none;
+                    width: 70%;
+                    max-width: none;
+                    margin: 0;
+                    margin-left: 15%;
+                }
             }
 
             // Clearfix to make sure the images don't go out of the box
