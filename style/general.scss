@@ -136,6 +136,36 @@ header{
         }
     }
 
+    #ontwerp-richtlijnen{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        p{
+            width: 40%;
+            text-align: center;
+            margin-top: 1vw;
+            padding: 1vw;
+
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 5px;
+            
+            &:hover{
+                background-color: rgba(255, 255, 255, 0.25);
+            }
+        }
+
+        
+        @media (max-width: $smallscr){
+            flex-direction: column;
+
+            p{
+                width: 80%;
+                margin-left: 10%;
+            }
+        }
+    }
+
     // Clearfix to make sure the images don't go out of the box
     &::after {
         content: "";
@@ -215,7 +245,6 @@ header{
             }
         }
     }
-    
 }
 
 #concepts-container{
@@ -254,8 +283,7 @@ header{
                     float: none;
                     width: 70%;
                     max-width: none;
-                    margin: 0;
-                    margin-left: 15%;
+                    margin: 3vw 0 2vw 15%;
                 }
             }
 
@@ -273,9 +301,3 @@ footer{
     padding: 1vw;
     background-color: #6F5869;
 }
-
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
