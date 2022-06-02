@@ -147,9 +147,11 @@ header{
             margin-top: 1vw;
             padding: 1vw;
 
+            transition: ease-out 200ms;
+
             background-color: rgba(255, 255, 255, 0.1);
             border-radius: 5px;
-            
+
             &:hover{
                 background-color: rgba(255, 255, 255, 0.25);
             }
@@ -200,7 +202,6 @@ header{
                 width: 70%;
                 margin-left: 15%;
                 border-radius: 5px;
-                // border: 1px solid white;
 
                 opacity: 0.8;
                 transition: ease-out 200ms;
@@ -209,10 +210,7 @@ header{
             h3{
                 text-align: center;
                 line-height: 1em;
-            }
-    
-            &:nth-child(even){
-                margin-left: 1vw;
+                margin-bottom: 1vw;
             }
     
             &:hover{
